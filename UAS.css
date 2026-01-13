@@ -1,0 +1,45 @@
+/* Warna Dasar */
+:root {
+    --putekk-blue: #1e3a8a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text-putekk {
+    color: var(--putekk-blue);
+}
+
+.bg-putekk {
+    background-color: var(--putekk-blue);
+}
+
+/* Hero Section dengan Background Perpustakaan */
+.hero-section {
+    background: linear-gradient(rgba(30, 58, 138, 0.7), rgba(30, 58, 138, 0.7)), 
+                url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Hover Efek untuk Card Buku */
+.book-card {
+    transition: all 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Styling Scrollbar Keranjang */
+#cart-items::-webkit-scrollbar {
+    width: 6px;
+}
+
+#cart-items::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 10px;
+}
